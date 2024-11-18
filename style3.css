@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300..700&display=swap');
+
+h1, h5, label, input{
+    font-family: "Red Hat Text", sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    width: 600px;
+    background-color: lightcyan;
+    border-style: double;
+}
+
+textarea {
+    border-radius: 5px;
+}

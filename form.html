@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Submission Form</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <h1 >Recipe Submission Form</h1>
+    <form action="/sign_up" method="post">
+
+        <fieldset>
+
+            <br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" aria-label="Name" required>
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter a Valid email" aria-label="Email" required>
+            
+            <br>
+
+            <br><hr>
+
+            <h5>Recipe Type</h5>
+            
+            <input type="radio" id="sweet" name="recipe" value="sweet" aria-label="Sweet" required>
+            <label for="sweet">Sweet</label>
+
+            <input type="radio" id="savory" name="recipe" value="savory" aria-label="Savory" required>
+            <label for="savory">Savory</label>
+            <br><br>
+
+            <br><br><hr>
+
+            <h5>Your Recipe</h5>
+            <label for="recipe-name">Name of your Recipe:</label>
+            <input type="text" id="recipe-name" name="recipe-name" placeholder="Enter Name of Recipe" aria-label="Recipe Name" required>
+            <br><br>
+
+            <div class="field" tabindex="3">
+                <label for="ingredients"><small>Ingredients:</small></label>
+                <textarea name="ingredients" placeholder="Recipe Ingredients" required></textarea>
+                <br><br>
+            </div>
+
+            <div class="field" tabindex="3">
+                <label for="instructions"><small>Instructions:</small></label>
+                <textarea name="instructions" placeholder="Recipe Instructions" required></textarea>
+
+                <br><br>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
